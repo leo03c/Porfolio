@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail } from "lucide-react"
+import { Github, Mail } from "lucide-react"
 
 export function Hero() {
   return (
@@ -9,7 +9,7 @@ export function Hero() {
           <div className="space-y-4">
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-balance">
               {"Hola, soy "}
-              <span className="text-accent">leo03c</span>
+              <span className="text-accent">Leonardo</span>
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground text-balance">Diseñador y Programador Fullstack</p>
           </div>
@@ -35,12 +35,7 @@ export function Hero() {
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <Linkedin className="h-5 w-5" />
-              </a>
-            </Button>
-            <Button variant="ghost" size="icon" asChild>
-              <a href="mailto:leo03c@example.com" aria-label="Email">
+              <a href="mailto:leonardocastillod7@gmail.com" aria-label="Email">
                 <Mail className="h-5 w-5" />
               </a>
             </Button>

@@ -10,7 +10,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "leo03c - Fullstack Developer & Designer",
   description: "Portfolio de leo03c - Ingeniero en Ciencias Informáticas especializado en desarrollo fullstack",
-  generator: "v0.app",
+  generator: "Leonardo Castillo Diaz",
 }
 
 export default function RootLayout({
