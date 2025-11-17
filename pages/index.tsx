@@ -1,1 +1,0 @@
-Convert project files to TypeScript, add tsconfig and types, fix compilation

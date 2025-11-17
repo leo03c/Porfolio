@@ -1,47 +1,40 @@
-import { Button } from "@/components/ui/button"
-import { Github, Mail } from "lucide-react"
+import Link from "next/link";
+import { useLang } from "@/lib/i18n";
 
-export function Hero() {
+const CV_PATH = "/CV_Leonardo_Castillo.pdf";
+
+export function Hero(): JSX.Element {
+  const { t } = useLang();
+
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-16">
-      <div className="container mx-auto max-w-4xl">
-        <div className="space-y-8">
-          <div className="space-y-4">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-balance">
-              {"Hola, soy "}
-              <span className="text-accent">Leonardo</span>
-            </h1>
-            <p className="text-xl sm:text-2xl text-muted-foreground text-balance">Diseñador y Programador Fullstack</p>
+    <section id="hero" className="mb-16 scroll-mt-24" aria-labelledby="hero-title">
+      <div className="grid items-center gap-8 md:grid-cols-2">
+        <div>
+          <p className="kicker mb-2">{t.role}</p>
+          <h2 id="hero-title" className="text-4xl font-extrabold leading-tight mb-4">
+            {t.name}
+          </h2>
+          <p className="text-lg text-slate-700">{t.heroPitch}</p>
+
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Link href="#projects" prefetch={false} className="btn-primary">
+              {t.projectsTitle}
+            </Link>
+            <a href={CV_PATH} download className="btn-outline">
+              {t.downloadCV}
+            </a>
           </div>
+        </div>
 
-          <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed">
-            Apasionado por el desarrollo frontend y backend. Ingeniero en Ciencias Informáticas graduado de la UCI.
-            Siempre busco aprender y superarme día a día, creando soluciones robustas y escalables.
-          </p>
-
-          <div className="flex flex-wrap gap-4">
-            <Button asChild size="lg">
-              <a href="#projects">Ver proyectos</a>
-            </Button>
-            <Button asChild variant="outline" size="lg">
-              <a href="#contact">Contactar</a>
-            </Button>
-          </div>
-
-          <div className="flex gap-4 pt-4">
-            <Button variant="ghost" size="icon" asChild>
-              <a href="https://github.com/leo03c" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <Github className="h-5 w-5" />
-              </a>
-            </Button>
-            <Button variant="ghost" size="icon" asChild>
-              <a href="mailto:leonardocastillod7@gmail.com" aria-label="Email">
-                <Mail className="h-5 w-5" />
-              </a>
-            </Button>
+        <div className="flex justify-center">
+          <div
+            aria-hidden="true"
+            className="flex h-64 w-64 items-center justify-center rounded-lg bg-gradient-to-br from-slate-100 via-white to-slate-50 text-slate-400"
+          >
+            Logo / Avatar
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

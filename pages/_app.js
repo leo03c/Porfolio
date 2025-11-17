@@ -1,1 +1,0 @@
-import '../styles/globals.css';\nimport { LanguageProvider } from '../lib/i18n';\n\nfunction MyApp({ Component, pageProps }) {\n  return (\n    <LanguageProvider>\n      <Component {...pageProps} />\n    </LanguageProvider>\n  );\n}\n\nexport default MyApp;

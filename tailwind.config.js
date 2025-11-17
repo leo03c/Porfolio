@@ -1,1 +1,13 @@
-module.exports = {\n  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],\n  theme: {\n    extend: {\n      colors: {\n        primary: "#0f172a",\n        accent: "#06b6d4",\n        muted: "#94a3b8"\n      }\n    }\n  },\n  plugins: []\n};
+module.exports = {
+  content: ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        primary: "#0f172a",
+        accent: "#06b6d4",
+        muted: "#94a3b8",
+      },
+    },
+  },
+  plugins: [],
+};
