@@ -81,7 +81,7 @@ export function Contact() {
                     </Button>
                     
                     <Button variant="outline" size="lg" className="w-full gap-2" asChild>
-                      <a href="https://t.me/leo03c" target="_blank" rel="noopener noreferrer">
+                      <a href="https://t.me/Leocd3" target="_blank" rel="noopener noreferrer">
                         <MessageCircle className="h-5 w-5" />
                         Telegram
                       </a>
