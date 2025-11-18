@@ -151,7 +151,7 @@ export function Hero() {
 
           {/* Columna derecha - Código QR */}
           <div className="flex flex-col items-center justify-center space-y-6">
-            <div className="bg-white p-6 rounded-2xl shadow-lg border border-border transition-all duration-300 hover:shadow-xl">
+            <div className="bg-card p-6 rounded-2xl shadow-lg border border-border transition-all duration-300 hover:shadow-xl">
               <div className="text-center space-y-4">
                 <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground mb-2">
                   <QrCode className="h-4 w-4" />
