@@ -1,28 +1,21 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
-import "./globals.css"
-
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+import type { Metadata } from 'next'
+import { GeistSans } from 'geist/font/sans'
+import './globals.css'
 
 export const metadata: Metadata = {
-  title: "leo03c - Fullstack Developer & Designer",
-  description: "Portfolio de leo03c - Ingeniero en Ciencias Informáticas especializado en desarrollo fullstack",
-  generator: "Leonardo Castillo Diaz",
+  title: 'Leonardo Castillo - Desarrollador Fullstack',
+  description: 'Portfolio de Leonardo Castillo',
 }
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
-    <html lang="es">
-      <body className={`font-sans antialiased`}>
+    <html lang="es" className={GeistSans.className}>
+      <body>
         {children}
-        <Analytics />
       </body>
     </html>
   )

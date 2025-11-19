@@ -17,7 +17,7 @@ export function Skills() {
     {
       icon: Wrench,
       category: "Extras",
-      skills: ["Git", "C++", "Java", "Bots de Telegram", "Odoo"],
+      skills: ["Git", "C++", "Java", "Bots de Telegram", "Odoo", "Arduino"],
     },
     {
       icon: Users,

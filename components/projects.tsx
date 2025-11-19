@@ -25,20 +25,38 @@ export function Projects() {
       type: "personal",
     },
     {
-      title: "Sitio Web Barbería",
+      title: "Aplicacion Para Restaurantes",
       description:
-        "Landing page moderna y responsive para barbería, optimizada para conversión y experiencia de usuario. Diseño atractivo con animaciones fluidas.",
-      tags: ["React", "Tailwind CSS", "JavaScript", "Responsive Design"],
-      github: "https://github.com/leo03c/Barberia",
+      "Sistema web para la gestión y organización de restaurantes. Incluye herramientas avanzadas para administrar el menú, procesar pedidos, organizar reservas y asignar roles de acceso al personal.",
+      tags: ["Python", "Django", "PostgreSQL", "Bootstrap"],
+      github: "https://github.com/leo03c/Restaurant",
+      featured: true,
+      type: "personal",
+    },
+    {
+      title: "Sistema de sensores para monitoreo ambiental",
+      description:
+      "Aplicacion enfocada en el seguimiento ambiental para parques inteligentes en zonas altamente urbanizadas.",
+      tags: ["Arduino", "C++", "Python"],
+      github: "https://github.com/leo03c/Sistema-de-sensores-para-monitoreo-ambiental",
       featured: false,
       type: "personal",
     },
     {
-      title: "Sistema de Gestión de Archivos",
+      title: "Tienda de Articulos Deportivos",
       description:
-        "Aplicación web para gestión y organización de archivos con funcionalidades avanzadas de búsqueda, categorización y permisos de usuario.",
+      "Aplicación web para gestión y organización de Tiendas Deportivas con funcionalidades avanzadas de búsqueda, categorización y permisos de usuario.",
       tags: ["Python", "Django", "PostgreSQL", "Bootstrap"],
       github: "https://github.com/leo03c/Archivo",
+      featured: false,
+      type: "personal",
+    },
+    {
+      title: "Seguimiento Pasientes Veterinaria",
+      description:
+        "Sistema de gestion de los paciente para una clinica de veterinaria generica.",
+      tags: [ "React", "Tailwind CSS"],
+      github: "https://github.com/leo03c/Seguimiento-Pasientes-Veterinaria",
       featured: false,
       type: "personal",
     },
