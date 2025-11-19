@@ -84,7 +84,7 @@ export function Hero() {
                 <div className="text-sm text-muted-foreground">Años experiencia</div>
               </div>
               <div className="space-y-1">
-                <div className="text-2xl font-bold text-accent">15+</div>
+                <div className="text-2xl font-bold text-accent">10+</div>
                 <div className="text-sm text-muted-foreground">Proyectos</div>
               </div>
               <div className="space-y-1">
@@ -92,7 +92,7 @@ export function Hero() {
                 <div className="text-sm text-muted-foreground">Compromiso</div>
               </div>
               <div className="space-y-1">
-                <div className="text-2xl font-bold text-accent">3</div>
+                <div className="text-2xl font-bold text-accent">2</div>
                 <div className="text-sm text-muted-foreground">Idiomas</div>
               </div>
             </div>
