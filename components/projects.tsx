@@ -25,7 +25,7 @@ export function Projects() {
       type: "personal",
     },
     {
-      title: "Aplicacion Para Restaurantes",
+      title: "Aplicación Para Restaurantes",
       description:
       "Sistema web para la gestión y organización de restaurantes. Incluye herramientas avanzadas para administrar el menú, procesar pedidos, organizar reservas y asignar roles de acceso al personal.",
       tags: ["Python", "Django", "PostgreSQL", "Bootstrap"],
@@ -36,14 +36,14 @@ export function Projects() {
     {
       title: "Sistema de sensores para monitoreo ambiental",
       description:
-      "Aplicacion enfocada en el seguimiento ambiental para parques inteligentes en zonas altamente urbanizadas.",
+      "Aplicación enfocada en el seguimiento ambiental para parques inteligentes en zonas altamente urbanizadas.",
       tags: ["Arduino", "C++", "Python"],
       github: "https://github.com/leo03c/Sistema-de-sensores-para-monitoreo-ambiental",
       featured: false,
       type: "personal",
     },
     {
-      title: "Tienda de Articulos Deportivos",
+      title: "Tienda de Artículos Deportivos",
       description:
       "Aplicación web para gestión y organización de Tiendas Deportivas con funcionalidades avanzadas de búsqueda, categorización y permisos de usuario.",
       tags: ["Python", "Django", "PostgreSQL", "Bootstrap"],
@@ -52,9 +52,9 @@ export function Projects() {
       type: "personal",
     },
     {
-      title: "Seguimiento Pasientes Veterinaria",
+      title: "Seguimiento Pacientes Veterinaria",
       description:
-        "Sistema de gestion de los paciente para una clinica de veterinaria generica.",
+        "Sistema de gestión de los pacientes para una clinica de veterinaria genérica.",
       tags: [ "React", "Tailwind CSS"],
       github: "https://github.com/leo03c/Seguimiento-Pasientes-Veterinaria",
       featured: false,

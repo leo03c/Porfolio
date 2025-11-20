@@ -17,7 +17,7 @@ export function Skills() {
     {
       icon: Wrench,
       category: "Extras",
-      skills: ["Git", "C++", "Java", "Bots de Telegram", "Odoo", "Arduino"],
+      skills: ["Git", "C++", "Java", "Telegram Bots", "Odoo", "Arduino"],
     },
     {
       icon: Users,
@@ -33,7 +33,7 @@ export function Skills() {
           <div className="space-y-4 text-center">
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Tecnologías & Habilidades</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Stack tecnológico completo con el que desarrollo soluciones robustas y escalables, 
+              Stack tecnológico con el que desarrollo soluciones robustas y escalables, 
               desde el frontend hasta el backend.
             </p>
           </div>
