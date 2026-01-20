@@ -12,7 +12,7 @@ export function Skills() {
     {
       icon: Database,
       category: "Backend", 
-      skills: ["Python", "Django", "Django REST", "PostgreSQL", "APIs REST"],
+      skills: ["Python", "Django", "Django REST", "PostgreSQL", "APIs REST","Spring Boot"],
     },
     {
       icon: Wrench,

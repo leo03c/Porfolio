@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { ExternalLink, Github, Building, Calendar, Star } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
+import { link } from "fs"
 
 export function Projects() {
   const projects = [
@@ -14,6 +15,24 @@ export function Projects() {
       tags: ["React", "Next.js", "JavaScript", "TypeScript", "Tailwind CSS", "Git", "Trabajo en Equipo"],
       featured: true,
       type: "professional",
+    },
+    {
+      title: "Contabilidad Finanzas",
+      description: "Aplicación para la gestión contable y financiera, construida principalmente en TypeScript. Integra lógica de negocio robusta.",
+      tags: [ "TypeScript", "PLpgSQL","React", "Next.js", "JavaScript", "TypeScript", "Tailwind CSS", "Git","Supabase" ],
+      github: "https://github.com/leo03c/Contabilidad-Finanzas",
+      link: "https://contabilidad-finanzas.vercel.app/",
+      featured: true,
+      type: "personal",
+    },
+    {
+      title: "Sistema IPVs",
+      description: "Sistema integral desarrollado en TypeScript para la administración de IPVs, con lógica avanzada y una interfaz adaptable.",
+      tags: [ "TypeScript", "PLpgSQL","React", "Next.js", "JavaScript", "TypeScript", "Tailwind CSS", "Git","Supabase"],
+      github: "https://github.com/leo03c/Sistema_IPVs",
+      link: "https://sistema-ipvs.vercel.app/",
+      featured: true,
+      type: "personal",
     },
     {
       title: "Barbería - Plataforma Integral",
@@ -150,20 +169,24 @@ export function Projects() {
                       ))}
                     </div>
                     
-                    {project.github && (
+                    {(project.github || project.link) && (
                       <div className="flex gap-3">
-                        <Button variant="default" size="sm" asChild className="gap-2">
-                          <a href={project.github} target="_blank" rel="noopener noreferrer">
-                            <Github className="h-4 w-4" />
-                            Ver Código
-                          </a>
-                        </Button>
-                        <Button variant="outline" size="sm" asChild className="gap-2">
-                          <a href={project.github} target="_blank" rel="noopener noreferrer">
-                            <ExternalLink className="h-4 w-4" />
-                            Demo
-                          </a>
-                        </Button>
+                        {project.github && (
+                          <Button variant="default" size="sm" asChild className="gap-2">
+                            <a href={project.github} target="_blank" rel="noopener noreferrer">
+                              <Github className="h-4 w-4" />
+                              Ver Código
+                            </a>
+                          </Button>
+                        )}
+                        {project.link && (
+                          <Button variant="outline" size="sm" asChild className="gap-2">
+                            <a href={project.link} target="_blank" rel="noopener noreferrer">
+                              <ExternalLink className="h-4 w-4" />
+                              Demo
+                            </a>
+                          </Button>
+                        )}
                       </div>
                     )}
                   </div>
